@@ -3,11 +3,13 @@
 
 <h1>The Ixion Programming Language</h1>
 Multi-paradigm compiled programming language for the jvm platform.
+
+(README by Kingmang and Dister07)
 </div>
 
 
-> [!IMPORTANT]
-> Before installing the language, install jdk.
+> [!IMPORTANT] \
+> Before installing the language, install jdk 17.
 
 Hello World in Ixion:
 
@@ -24,6 +26,32 @@ def main(args: String[]) {
 def main(args: String[]) {
    var a : String?;
    var b : String = "Hello";
+}
+```
+
+type casting example:
+
+> [!NOTE]
+> declaration is: "variable" to "type"
+```scala
+def main(args: String[]) {
+    var a : String = "100";
+    var b : int = 20;
+    println(a to int + b);
+}
+```
+
+> [!NOTE]
+> language has input from user with Scanner
+
+```scala
+using java.util.Scanner;
+
+def main(args: String[]) {
+    var s = new Scanner(System.in);
+    var a : int = s.nextInt();
+    var b : int = s.nextInt();
+    println(a + b);
 }
 ```
 
@@ -88,3 +116,4 @@ We will review and help with all reasonable pull requests as long as the guideli
 - In general, check existing code to make sure your code matches relatively close to the code already in the project.
 - Favour readability over compactness.
 - If you need help, check out the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) for a reference.
+
