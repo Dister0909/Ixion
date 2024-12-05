@@ -10,17 +10,15 @@ README by Kingmang and Dister07\
 
 > [!IMPORTANT] \
 > Гайд как запустить программу на Ixion:
-> ```
->  1. Установить [jdk 17](https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe)
->  2. Скачать и распаковать [архив языка](https://github.com/IxionLang/Ixion/archive/refs/heads/main.zip) с Github
->  3. Установить IDE для Java (Гайд для Intellij IDEA)
->  4. Заходим в проект
->  5. В правом верхнем углу нажать на <b>Edit configurations</b>
->  6. Нажать на <b>+ -> Application</b> в левом верхнем углу 
->  7. В разделе <b>Build and run</b> вводим в <b>Main Class</b> <b>Runner</b>
->  8. В том же разделе вводим в <b>Program arguments</b> название своего класса (Например: "test.ix")
->  9. Нажимаем на зеленую стрелку в правом верхнем углу и смотрим в консоле результат!
-> ```
+> > 1. Установить [jdk 17](https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe)
+> > 2. Скачать и распаковать [архив языка](https://github.com/IxionLang/Ixion/archive/refs/heads/main.zip) с Github
+> > 3. Установить IDE для Java (Гайд для Intellij IDEA)
+> > 4. Заходим в проект
+> > 5. В правом верхнем углу нажать на <b>Edit configurations</b>
+> > 6. Нажать на <b>+ -> Application</b> в левом верхнем углу 
+> > 7. В разделе <b>Build and run</b> вводим в <b>Main Class</b> <b>Runner</b>
+> > 8. В том же разделе вводим в <b>Program arguments</b> название своего класса (Например: "test.ix")
+> > 9. Нажимаем на зеленую стрелку в правом верхнем углу и смотрим в консоле результат!
 
 ## Contributions
 We will review and help with all reasonable pull requests as long as the guidelines below are met.
