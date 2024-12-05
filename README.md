@@ -1,112 +1,24 @@
 <div align="center">
   <img src="https://github.com/IxionLang/Ixion/blob/main/assets/icon.png" width="200">
 
-<h1>The Ixion Programming Language</h1>
-Multi-paradigm compiled programming language for the jvm platform.
+<h1>Язык программирования Ixion</h1>
+Мульти-парадигмальный компилируемый язык программирования для платформы jvm.
 
-(README by Kingmang and Dister07)
+README by Kingmang and Dister07\
+    Переведен Dister07
 </div>
 
-
 > [!IMPORTANT] \
-> Before installing the language, install jdk 17.
-
-Hello World in Ixion:
-
-```scala
-def main(args: String[]) {
-   println("Hello World");
-}
-```
-
-> [!NOTE]
-> The language contains nullable types and non-nullable types.
-
-```scala
-def main(args: String[]) {
-   var a : String?;
-   var b : String = "Hello";
-}
-```
-
-type casting example:
-
-> [!NOTE]
-> declaration is: "variable" to "type"
-```scala
-def main(args: String[]) {
-    var a : String = "100";
-    var b : int = 20;
-    println(a to int + b);
-}
-```
-
-> [!NOTE]
-> language has input from user with Scanner
-
-```scala
-using java.util.Scanner;
-
-def main(args: String[]) {
-    var s = new Scanner(System.in);
-    var a : int = s.nextInt();
-    var b : int = s.nextInt();
-    println(a + b);
-}
-```
-
-java ArrayList example:
-
-```scala
-using java.util.ArrayList;
-
-def main(args: String[]){
-    var list = new ArrayList();
-
-    list.add("Hello");
-    list.add("World");
-
-    for(var i = 0; i < list.size(); i++){
-        println(list.get(i));
-    }
-}
-```
-
-> [!NOTE]
-> The language supports OOP.
-
-Inheritance example:
-
-```scala
-class Human {
-   var name: String?;
-
-   this(name: String?) {
-      this.name = name;
-    }
-   override def toString()  => "My name is: " + name;
-
-}
-
-class Man ext Human {
-    var age : int;
-
-   this(age: int) :("Artyom") {
-       this.age = age;
-    }
-
-    override def toString(): String {
-        const name = super.toString();
-        return name + " My age is" + age;
-    }
-
-}
-
-def main(args: String[]) {
-   var simpleMan: Human = new Man(12);
-   println(simpleMan);
-}
-```
+> Гайд как запустить программу на Ixion:
+> > 1. Установить [jdk 17](https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe)
+> > 2. Скачать и распаковать [архив языка](https://github.com/IxionLang/Ixion/archive/refs/heads/main.zip) с Github
+> > 3. Установить IDE для Java (Гайд для Intellij IDEA)
+> > 4. Заходим в проект
+> > 5. В правом верхнем углу нажать на <b>Edit configurations</b>
+> > 6. Нажать на <b>+ -> Application</b> в левом верхнем углу 
+> > 7. В разделе <b>Build and run</b> вводим в <b>Main Class</b> <b>Runner</b>
+> > 8. В том же разделе вводим в <b>Program arguments</b> название своего класса (Например: "test.ix")
+> > 9. Нажимаем на зеленую стрелку в правом верхнем углу и смотрим в консоле результат!
 
 ## Contributions
 We will review and help with all reasonable pull requests as long as the guidelines below are met.
